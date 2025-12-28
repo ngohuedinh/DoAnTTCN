@@ -20,8 +20,8 @@ $sqlToday->bind_param("s", $currentDate);
 $sqlToday->execute();
 $resToday = $sqlToday->get_result();
 
-$dangRua = 0;          // Biến đếm số xe thật sự đang rửa
-$bookedSlots = [];     // Mảng lưu các giờ đã có người đặt (để tính gợi ý)
+$dangRua = 0;         
+$bookedSlots = [];     
 
 if ($resToday) {
     while ($row = $resToday->fetch_assoc()) {
@@ -32,31 +32,31 @@ if ($resToday) {
         $startTime = strtotime("$currentDate $gioDatStr"); 
         $endTime   = $startTime + ($thoiGianLam * 60);     
 
-        // Chỉ đếm là đang rửa nếu thời gian hiện tại nằm trong khoảng thời gian làm
+        
         if ($currentTime >= $startTime && $currentTime <= $endTime) {
             $dangRua++;
         }
 
-        // --- B. LƯU SLOT ĐỂ TÍNH GỢI Ý (Tránh trùng giờ) ---
+      
         $slotKey = date('H:i', $startTime); 
         if (!isset($bookedSlots[$slotKey])) $bookedSlots[$slotKey] = 0;
         $bookedSlots[$slotKey]++;
     }
 }
 
-// 2. Tìm khung giờ GỢI Ý gần nhất (Logic thông minh)
+
 $suggestion = "";
-// Làm tròn lên mỗi 30 phút tiếp theo. VD: 10:10 -> 10:30
+
 $startCheck = ceil($currentTime / (30*60)) * (30*60); 
-$endOfDay   = strtotime("$currentDate 18:30:00"); // Giờ đóng cửa
+$endOfDay   = strtotime("$currentDate 18:30:00");
 
 for ($i = $startCheck; $i < $endOfDay; $i += 1800) { 
     $slotCheck = date('H:i', $i);
     
-    // Kiểm tra: Nếu giờ này chưa ai đặt HOẶC số lượng < 3
+   
     if (!isset($bookedSlots[$slotCheck]) || $bookedSlots[$slotCheck] < $MAX_PER_SLOT) {
         $suggestion = $slotCheck;
-        break; // Tìm thấy giờ trống gần nhất thì dừng ngay
+        break;
     }
 }
 
@@ -257,7 +257,7 @@ body {
             </div>
 
             <?php if (!isset($_SESSION['TenDangNhap'])): ?>
-            <!-- Thông báo cho khách chưa đăng nhập -->
+            
             <div class="alert alert-warning text-center mb-4">
                 <i class="fas fa-info-circle"></i> 
                 Bạn cần <a href="dangnhap.php" class="alert-link fw-bold">đăng nhập</a> hoặc 
