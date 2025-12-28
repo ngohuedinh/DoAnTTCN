@@ -66,12 +66,12 @@ if ($result->num_rows > 0) {
     $failCount = 0;
 
     try {
-        // Cấu hình SMTP
+        
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'ngohuedinhit@gmail.com';
-        $mail->Password   = 'zpgcmuithmirqbnw'; // App Password
+        $mail->Password   = 'bảo mật'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
         $mail->CharSet    = 'UTF-8';
@@ -89,11 +89,11 @@ if ($result->num_rows > 0) {
                 $tongTien = number_format($row['TongTien'], 0, ',', '.');
                 $ghichu  = $row['GhiChu'] ?? '';
 
-                // Tính thời gian còn lại
+          
                 $appointmentTime = strtotime($row['NgayDat'] . ' ' . $row['GioDat']);
                 $minutesLeft = round(($appointmentTime - time()) / 60);
 
-                // Email HTML Template
+               
                 $emailBody = "
                 <!DOCTYPE html>
                 <html lang='vi'>
