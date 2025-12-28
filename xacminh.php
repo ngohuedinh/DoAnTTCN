@@ -4,13 +4,13 @@ require_once 'database.php';
 $msg = "";
 $success = false;
 
-// =============== KIỂM TRA TOKEN ===============
+
 if (!isset($_GET['token']) || empty($_GET['token'])) {
     $msg = "Token không hợp lệ!";
 } else {
     $token = $_GET['token'];
 
-    // Lấy user theo token
+   
     $stmt = $conn->prepare("SELECT * FROM nguoi_dung WHERE verify_token = ? LIMIT 1");
     $stmt->bind_param("s", $token);
     $stmt->execute();
@@ -21,16 +21,16 @@ if (!isset($_GET['token']) || empty($_GET['token'])) {
     } else {
         $user = $result->fetch_assoc();
 
-        // =============== KIỂM TRA TÀI KHOẢN ĐÃ XÁC MINH ===============
+       
         if ($user['is_verified'] == 1) {
             $msg = "Tài khoản này đã được xác minh trước đó!";
             $success = true; // Vẫn cho phép đăng nhập
         }
-        // =============== KIỂM TRA HẠN TOKEN ===============
+       
         elseif (!empty($user['verify_expire']) && strtotime($user['verify_expire']) < time()) {
             $msg = "Token đã hết hạn! Vui lòng đăng ký lại hoặc yêu cầu gửi lại email xác minh.";
         }
-        // =============== XÁC MINH TÀI KHOẢN ===============
+        
         else {
             $updateStmt = $conn->prepare("
                 UPDATE nguoi_dung
