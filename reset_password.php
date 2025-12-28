@@ -53,18 +53,17 @@ if (isset($_POST['send_reset'])) {
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
                 $mail->Username   = 'ngohuedinh@gmail.com';
-                $mail->Password   = 'zpgcmuithmirqbnw';     
+                $mail->Password   = 'pass email chưa thêm để bảo mật';     
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port       = 587;
                 $mail->CharSet    = 'UTF-8';
 
-                // Người gửi
                 $mail->setFrom('noreply@d2auto.com', 'D2AUTO');
                 
-                // Người nhận
+               
                 $mail->addAddress($email, $user['HoVaTen']);
 
-                // Nội dung email
+               
                 $mail->isHTML(true);
                 $mail->Subject = 'Đặt lại mật khẩu - D2AUTO';
                 $mail->Body    = "
