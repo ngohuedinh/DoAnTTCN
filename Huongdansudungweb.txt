@@ -1,0 +1,116 @@
+              NHÓM 24 - ĐỀ TÀI: WEB ĐẶT LỊCH RỬA XE D2AUTO - https://ngohuedinh.id.vn
+
+HUỲNH LÂM CHÍ DŨNG - DH52200533
+NGÔ HUẾ ĐÌNH       - DH52200505
+
+Tài Khoản TEXT WEB
+
+-USER:   ngohuedinh/Naruto123
+-ADMIN:  admin/admin123
+
+
+
+-------------------------------------HƯỚNG DẪN SỬ DỤNG------------------------
+
+
+DÀNH CHO KHÁCH HÀNG 
+
+1. ĐĂNG KÍ TÀI KHOẢN
+Bước 1: Truy cập trang web và click "Đăng ký"
+Bước 2: Điền thông tin:
+Bước 3: Click "Đăng ký" và kiểm tra email để xác thực tài khoản
+Bước 4: Click vào link trong email để kích hoạt tài khoản
+
+2. ĐĂNG NHẬP
+Bước 1: Click "Đăng nhập"
+Bước 2: Nhập tên đăng nhập và mật khẩu
+Bước 3: Click "Đăng nhập"
+
+
+3. ĐẶT LỊCH RỬA XE
+Bước 1: Sau khi đăng nhập, click "Đặt lịch"
+Bước 2: Chọn thông tin:
+Bước 3: Chọn dịch vụ:
+Bước 4: Nhập ghi chú
+Bước 5: Kiểm tra tổng tiền và click "Đặt lịch"
+Bước 6: Hệ thống hiển thị thông báo đặt lịch thành công
+
+4. XEM LỊCH ĐÃ ĐẶT
+Bước 1: Click "Lịch của tôi"
+Bước 2: Xem danh sách lịch đặt với các trạng thái:
+Bước 3: Click vào từng lịch để xem chi tiết dịch vụ
+
+5. HỦY LỊCH HẸN
+Điều kiện: Chỉ hủy được lịch trước 2 giờ so với giờ hẹn
+Bước 1: Vào "Lịch của tôi"
+Bước 2: Tìm lịch cần hủy
+Bước 3: Click nút "Hủy lịch"
+Bước 4: Xác nhận hủy
+
+6. ĐÁNH GIÁ DỊCH VỤ
+Bước 1: Click "Đánh giá"
+Bước 2: Chọn lịch đã hoàn thành muốn đánh giá
+Bước 3: Chọn số sao 
+Bước 4: Viết nhận xét 
+Bước 5: Click "Gửi đánh giá"
+
+7. XEM ĐÁNH GIÁ CỦA KHÁCH HÀNG KHÁC
+Bước 1: Click "Đánh giá" trên menu
+Bước 2: Xem danh sách đánh giá của khách hàng khác về dịch vụ
+
+8. CẬP NHẬT THÔNG TIN CÁ NHÂN
+Bước 1: Click "Hồ sơ" hoặc tên người dùng
+Bước 2: Cập nhật thông tin cần thay đổi:
+Bước 3: Click "Cập nhật"
+
+9. ĐỔI MẬT KHẨU
+Bước 1: Vào "Hồ sơ"
+Bước 2: Nhập mật khẩu cũ
+Bước 3: Nhập mật khẩu mới (ít nhất 6 ký tự)
+Bước 4: Xác nhận mật khẩu mới
+Bước 5: Click "Đổi mật khẩu"
+
+ DÀNH CHO QUẢN TRỊ VIÊN (ADMIN)
+1. ĐĂNG NHẬP ADMIN
+Bước 1: Truy cập trang đăng nhập
+Bước 2: Nhập tài khoản admin
+Bước 3: Hệ thống chuyển đến trang quản trị
+
+2. QUẢN LÝ LỊCH ĐẶT
+Xem tất cả lịch đặt:
+
+Xem danh sách theo trạng thái
+Cập nhật trạng thái lịch
+Click vào lịch cần cập nhật
+
+
+3. QUẢN LÝ DỊCH VỤ
+Thêm dịch vụ mới:
+
+Click "Thêm dịch vụ"
+Nhập thông tin
+
+
+Xóa dịch vụ:
+
+Click "Xóa" 
+
+
+4. QUẢN LÝ NGƯỜI DÙNG
+Xem danh sách người dùng
+Xem lịch sử đặt lịch của khách
+Khóa/Mở khóa tài khoản
+Click "Mở khóa" để kích hoạt lại
+
+
+5. CẤU HÌNH HỆ THỐNG
+Cài đặt giờ hoạt động:
+Cài đặt số xe tối đa mỗi giờ:
+Thêm ngày nghỉ
+
+6. XEM THỐNG KÊ DOANH THU
+Thống kê theo ngày, tháng, năm
+
+7. QUẢN LÝ ĐÁNH GIÁ
+Xem tất cả đánh giá
+Ẩn/Hiện đánh giá:
